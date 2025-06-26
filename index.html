@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Pendaftaran</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SweetAlert2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Form Pendaftaran</h1>
+      <form
+        id="form-pendaftaran"
+        action="http://localhost:3000/submit-form"
+        method="POST"
+      >
+        <div>
+          <label for="name">Nama Lengkap</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Masukkan Nama Lengkap"
+            required
+          />
+        </div>
+        <div>
+          <label for="date">Tanggal Daftar</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <button type="submit">Daftar</button>
+      </form>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
